@@ -22,13 +22,9 @@ matplotlib.use('Agg')  # Use non-interactive backend
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-
-
+# NLTK imports with proper setup
 import nltk
 nltk.download('vader_lexicon')
-
-from nltk.sentiment import SentimentIntensityAnalyzer
-# NLTK imports with proper setup
 import nltk
 try:
     from nltk.sentiment.vader import SentimentIntensityAnalyzer
@@ -746,5 +742,7 @@ if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8050))
 
     app.run(host="0.0.0.0", port=port)
+
+
 
 
