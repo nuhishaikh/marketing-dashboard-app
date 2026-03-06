@@ -22,6 +22,15 @@ matplotlib.use('Agg')  # Use non-interactive backend
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+# NLTK setup for Render deployment
+import nltk
+
+# Force download required resources
+nltk.download('vader_lexicon')
+nltk.download('stopwords')
+
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+from nltk.corpus import stopwords
 # NLTK imports with proper setup
 import nltk
 nltk.download('vader_lexicon')
